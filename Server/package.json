@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../Client",
+    "dev": " concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node seeder.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^6.3.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.11.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "stripe": "^8.191.0",
+    "uuid": "^8.3.2"
+  }
+}
